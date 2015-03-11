@@ -1,7 +1,7 @@
 Omeka Starter Theme
 ===================
 
-A starter Omeka theme, built for Omeka v2.2.2, featuring Twitter Boostrap v3.2.0.
+A starter Omeka theme, built for Omeka v2.2.2, featuring Twitter Boostrap v3.3.2.
 
 *  Responsive grid system for cross-platform viewing
 *  Most page templates available
