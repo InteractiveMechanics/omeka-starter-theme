@@ -7,7 +7,9 @@ A starter Omeka theme, built for Omeka v2.2.2, featuring Twitter Boostrap v3.3.2
 *  Most page templates available
 *  Open and available for anyone to use
 
-If you have questions or comments, feel free to contact hello@interactivemechanics.com, or submit issues/pull requests directly to the repository.
+### Questions? Requests?
+If you have questions or comments, feel free to contact hello@interactivemechanics.com, or submit issues/pull requests directly to the repository. If you have specific requests, let us know!
 
 ### Recent additions
-*  Added in a custom Zender partial for creating Bootstrap navigations (with dropdowns)
+*  9/15/15: Added in a custom Zender partial for creating Bootstrap navigations (with dropdowns)
+*  3/11/15: Added in the latest version of Twitter Bootstrap
