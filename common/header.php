@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="primary-navigation">
-                    <?php $nav = public_nav_main(); echo $nav->setUlClass('nav navbar-nav'); ?>
+                    <?php echo public_nav_main_bootstrap(); ?>
 
                     <form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
                         <?php echo search_form(array('show_advanced' => false)); ?>

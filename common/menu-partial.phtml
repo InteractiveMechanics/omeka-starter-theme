@@ -1,0 +1,33 @@
+<ul class="nav nav-pills">
+    <?php $count = 0 ?>
+    <?php foreach ($this->container as $page): ?>
+        <?php if( ! $page->isVisible() || !$this->navigation()->accept($page)) continue; ?>
+        <?php $hasChildren = $page->hasPages() ?>
+        <?php if( ! $hasChildren): ?>
+            <li <?php if($page->isActive()) echo 'class="active"'?> role="presentation">
+                <a class="nav-header" href="<?php echo $page->getHref() ?>">
+                    <?php echo $this->translate($page->getLabel()) ?>
+                </a>
+            </li>
+        <?php else: ?>
+            <li class="dropdown <?php if($page->isActive()) echo 'active'; ?>" role="presentation">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <?php echo $this->translate($page->getLabel()) ?>
+                    <span class="caret"></span>
+                </a>
+
+                <ul class="dropdown-menu" id="page_<?php echo $count ?>">
+                    <?php foreach($page->getPages() as $child): ?>
+                        <?php if( ! $child->isVisible() || !$this->navigation()->accept($child)) continue; ?>
+                        <li <?php if($child->isActive()) echo 'class="active"'?>>
+                            <a href="<?php echo $child->getHref() ?>">
+                                <?php echo $this->translate($child->getLabel()) ?>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+            </li>   
+        <?php endif; ?>
+        <?php $count++ ?>
+    <?php endforeach; ?>
+</ul>

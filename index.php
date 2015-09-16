@@ -1,5 +1,6 @@
 <?php echo head(array('bodyid'=>'home')); ?>
 
+<?php echo get_theme_option('Homepage About'); ?>
 <div class="row">
     <div class="col-sm-4">
         <?php if (get_theme_option('Display Featured Item') !== '0'): ?>
