@@ -1,4 +1,4 @@
-<ul class="nav nav-pills">
+<ul class="nav nav-pills navbar-left">
     <?php $count = 0 ?>
     <?php foreach ($this->container as $page): ?>
         <?php if( ! $page->isVisible() || !$this->navigation()->accept($page)) continue; ?>
