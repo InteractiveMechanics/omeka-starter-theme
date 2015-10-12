@@ -1,5 +1,5 @@
     </div>
-    <footer>
+    <footer role="contentinfo">
         <hr>
         <div class="container">
             <p class="text-center">

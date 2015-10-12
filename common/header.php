@@ -21,17 +21,17 @@
 
 
     <!-- Need to add custom and third-party CSS files? Include them here -->
-    <?php 
+    <?php
         queue_css_file('lib/bootstrap.min');
         queue_css_file('style');
         echo head_css();
     ?>
 
     <!-- Need more JavaScript files? Include them here -->
-    <?php 
+    <?php
         queue_js_file('lib/bootstrap.min');
         queue_js_file('globals');
-        echo head_js(); 
+        echo head_js();
     ?>
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -40,7 +40,7 @@
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-    <header>
+    <header role="banner">
         <div class="container">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <h1 class="site-title text-center"><?php echo link_to_home_page(theme_logo()); ?></h1>
@@ -67,6 +67,6 @@
                 </div>
             </div>
         </nav>
-    </header>        
+    </header>
     <div id="content" class="container">
         <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
