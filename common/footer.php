@@ -1,4 +1,5 @@
-    </div>
+      </div>
+    </main>
     <footer role="contentinfo">
         <hr>
         <div class="container">

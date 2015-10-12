@@ -68,5 +68,6 @@
             </div>
         </nav>
     </header>
-    <div id="content" class="container">
-        <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
+    <main id="content" role="main">
+      <div class="container">
+          <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
