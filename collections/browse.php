@@ -43,7 +43,7 @@
                             <?php endif; ?>
                         </div>
                     
-                        <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'collection' => $collection)); ?>
+                        <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
                     </div>
                 </div>
             <?php endforeach; ?>
