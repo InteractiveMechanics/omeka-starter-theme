@@ -19,7 +19,7 @@
                     <div class="no-image">No photos available.</div>
                 <?php endif; ?>
         </div>
-        <div class="col-sm-6">
+        </div>
             <?php echo all_element_texts('item'); ?>
         
             <!-- The following returns all of the files associated with an item. -->
